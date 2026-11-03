@@ -1,0 +1,9 @@
+{
+  "name": "maloy-halloween",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Halloween landing page for MaloyCser",
+  "type": "module",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" }
+}
