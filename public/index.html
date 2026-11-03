@@ -7,9 +7,12 @@
   <meta name="description" content="Тёмная сторона MaloyCser. Загляни в Telegram-канал — если не боишься.">
   <title>MaloyCser — заходи, если не боишься</title>
   <link rel="icon" href="assets/pumpkin.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
+  <audio id="background-music" src="assets/background.mp3" preload="auto" autoplay loop></audio>
+  <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="music-label">Включить музыку</span></button>
+  <span class="music-hint" id="music-hint" role="status">Звук включится при первом нажатии</span>
   <div class="atmosphere" aria-hidden="true"><div class="moon"></div><div class="fog fog-one"></div><div class="fog fog-two"></div><div class="embers" id="embers"></div><img class="ground-pumpkin pumpkin-left" src="assets/pumpkin.svg" alt=""><img class="ground-pumpkin pumpkin-right" src="assets/pumpkin.svg" alt=""><div class="web web-left"></div><div class="web web-right"></div></div>
   <header class="topbar"><a class="brand" href="#" aria-label="MaloyCser — главная"><img src="assets/pumpkin.svg" alt="" width="30" height="30">MALOY<span>CSER</span><i>™</i></a><a class="header-link" href="https://t.me/MaloyCser2">TELEGRAM <span>↗</span></a></header>
   <main>
@@ -28,12 +31,24 @@
       <a class="channel-button" href="https://t.me/MaloyCser2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3 3 10l6.8 2.5L17 7l-5.5 7.2L14 21l7-18Z"/></svg><span>ПЕРЕЙТИ В КАНАЛ</span><span class="button-arrow" aria-hidden="true">↗</span></a>
       <p class="channel-note">@MaloyCser2 <span>·</span> по ту сторону всё интереснее</p>
     </section>
+    <section class="gallery" aria-labelledby="gallery-title">
+      <span class="bio-kicker">ПО ТУ СТОРОНУ ЭФИРА</span><h2 id="gallery-title">Кадры из жизни</h2><p>Фотографии из публичного Telegram-канала MaloyCSer.</p>
+      <div class="gallery-grid">
+        <a href="assets/gallery-1.jpg" target="_blank" rel="noopener"><img src="assets/gallery-1.jpg" alt="MaloyCSer с участниками встречи: первый кадр" loading="lazy"><span>ЗА КАДРОМ / 01 ↗</span></a>
+        <a href="assets/gallery-2.jpg" target="_blank" rel="noopener"><img src="assets/gallery-2.jpg" alt="MaloyCSer в очках на совместной фотографии" loading="lazy"><span>ЗА КАДРОМ / 02 ↗</span></a>
+        <a href="assets/gallery-3.jpg" target="_blank" rel="noopener"><img src="assets/gallery-3.jpg" alt="Ещё один кадр со встречи из Telegram MaloyCSer" loading="lazy"><span>ЗА КАДРОМ / 03 ↗</span></a>
+      </div><a class="gallery-source" href="https://t.me/maloycser32/8837">Источник фотографий: Telegram MaloyCSer ↗</a>
+    </section>
     <section class="biography" aria-labelledby="bio-title">
       <div class="bio-heading"><span class="bio-kicker">ЗА НИКОМ</span><h2 id="bio-title">Алексей Артюхов<span> / MaloyCSer</span></h2><p>О человеке по ту сторону экрана.</p></div>
       <div class="bio-copy">
         <p>Алексей Артюхов известен в интернете под псевдонимом <strong>MaloyCSer</strong> — Малой КСер. Его публичная деятельность связана с прямыми эфирами и видеоконтентом. Под этим ником представлены его стримерские профили на Twitch и KICK.</p>
         <h3>Путь в стриминге</h3>
         <p>Согласно TwitchTracker, канал MaloyCSer на Twitch создан <strong>11 мая 2020 года</strong>, язык канала — русский. Эта дата относится к регистрации канала и не означает дату первого эфира. На KICK также существует канал MaloyCSer с записями трансляций и клипами.</p>
+        <h3>Влоги и жизнь вне эфира</h3>
+        <p>В <a href="https://t.me/s/maloycser32?before=8850">публичном Telegram-канале</a> Алексей делится фотографиями, короткими видео и анонсами. Среди публикаций есть история поездки в Париж и анонс влога <a href="https://youtu.be/mTXnSYITbzk">«VipeRR TOUR open — PARIS»</a>, который он представил как свой первый влог. Это ещё одна сторона его контента — события и поездки за пределами стримов.</p>
+        <h3>Где ещё найти MaloyCSer</h3>
+        <p>В <a href="https://kick.com/maloycser/about">разделе About канала KICK</a> указаны <a href="https://www.instagram.com/alex.artikov">Instagram alex.artikov</a>, <a href="https://www.youtube.com/@MaloyCSer1337">YouTube @MaloyCSer1337</a> и TikTok maloycser322. Там можно найти его собственные публикации и видео.</p>
         <h3>Где родился и вырос</h3>
         <p>Достоверные сведения о месте рождения, городе детства, образовании и ранних годах Алексея в найденных открытых источниках не подтверждены. Поэтому эти детали здесь не приводятся. Доступных проверенных данных пока недостаточно для полной биографии.</p>
         <div class="bio-sources"><span>Источники · проверено 4 ноября 2026</span><a href="https://twitchtracker.com/maloycser">TwitchTracker ↗</a><a href="https://kick.com/maloycser">KICK ↗</a><a href="https://ru.scribd.com/document/684589298/4ln">Публичное упоминание имени ↗</a></div>
@@ -41,7 +56,7 @@
     </section>
   </main>
   <footer><span>© <span id="year">2026</span> MALOYCSER</span><span class="footer-center">СДЕЛАНО ПОСЛЕ ПОЛУНОЧИ <span>✦</span></span><span>NO TRICKS. JUST VIBES.</span></footer>
-  <script src="app.js" defer></script>
+  <script src="app.js?v=3" defer></script>
 </body>
 </html>
 
